@@ -4,7 +4,7 @@ for x in range(1, T + 1):
     activities = [list(map(int, input().split())) + [_] for _ in range(N)]
     impossible = False
     schedule = [0] * N
-    cameronsLast = jamiesLast = -1
+    cameronsLast = jamiesLast = -1  # Last starting times of each person
     for start, end, i in sorted(activities):
         if impossible:
             break
